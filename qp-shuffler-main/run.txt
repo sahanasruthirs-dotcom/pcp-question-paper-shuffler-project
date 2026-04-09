@@ -1,0 +1,5 @@
+cd /d d:\qp-shuffler
+d:\tools\corretto17\jdk17.0.18_9\bin\javac.exe -d out src\Question.java src\MCQShuffler.java src\MCQServer.java
+d:\tools\corretto17\jdk17.0.18_9\bin\java.exe -cp out MCQServer
+
+http://localhost:8080/

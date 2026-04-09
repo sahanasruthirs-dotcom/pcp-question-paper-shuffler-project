@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>MCQ QP Shuffler</title>
+</head>
+<body>
+    <main class="container">
+        <h1>MCQ Question Paper Shuffler</h1>
+        <p>Upload a text file with question format:</p>
+        <pre>question|optionA|optionB|optionC|optionD|correctOption</pre>
+        <form method="post" action="/upload" enctype="multipart/form-data">
+            <label>Question File (.txt or .csv)</label>
+            <input type="file" name="questionsFile" accept=".txt,.csv" required />
+
+            <label>Number of sets</label>
+            <input type="number" name="sets" min="1" max="20" value="3" required />
+
+            <button type="submit">Shuffle and Download</button>
+        </form>
+
+        
+    </main>
+</body>
+</html>
